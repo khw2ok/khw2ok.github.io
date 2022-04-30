@@ -37,9 +37,13 @@
           }
         })
       })
+
+      document.oncontextmenu = function() {
+        return false
+      }
     </script>
   </head>
-  <body class="target" oncontextmenu="return false">
+  <body class="target">
     <div class="padding" style="position: fixed;">
       <div style="position: fixed; top: 36%;">
         <h1 class="title"><b><a href="javascript:window.scrollTo(0,0)" style="color: #121212 !important;">BongwonBot</a></b></h1>
@@ -89,7 +93,7 @@
     <br><br><br><br><br>
     
     <section class="padding" id="comments" style="position: absolute; float: left;">
-      <h1><b>챗봇에 대한 토론</b></h1>
+      <h2><b>챗봇에 대한 토론</b></h2>
       <small>봉원중학교 챗봇에 대하여 이야기 해주시기 바랍니다.<br>관련 없는 대화 시 삭제 될 수 있습니다.</small>
 
       <script src="https://utteranc.es/client.js"
@@ -99,6 +103,7 @@
         theme="github-light"
         crossorigin="anonymous"
         async
+        class="comments"
         style="height: auto; width: auto;">
       </script>
     </section>
