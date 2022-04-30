@@ -40,9 +40,13 @@ a {
     text-decoration: none !important;
 }
 
+.margin {
+    margin: 4rem !important;
+}
+
 .title {
-    font-weight: 750;
     font-size: 75px;
+    font-weight: 750;
     /* background: linear-gradient(to right, #ffc107, #ffc107, #212529); */
     /* -webkit-background-clip: text; */
     /* -webkit-text-fill-color: transparent; */
@@ -68,8 +72,9 @@ div#shell {
     display: block;
     position: relative;
     margin: 100px auto;
-    width: 318px;
-    height: 318px;
+    width: 300px;
+    height: 300px;
+    font-size: 75px;
 }
 
 div#shell{
@@ -78,28 +83,116 @@ div#shell{
 
 p#plax1 {
     position: absolute;
-    top: 10%;
-    left: 50%;
+    top: -10%;
+    left: 100%;
     z-index: 3;
 }
 
 p#plax2 {
     position: absolute;
     z-index: 4;
-    top: 40%;
-    left: 75%;
+    top: 30%;
+    left: 125%;
 }
 
 p#plax3 {
     position: absolute;
     z-index: 2;
-    top: 10%;
-    left: 100%;
+    top: -20%;
+    left: 150%;
 }
 
 p#plax4 {
     position: absolute;
-    top: 40%;
-    left: 125%;
+    top: 20%;
+    left: 175%;
     z-index: 1;
+}
+
+/* media */
+
+@media (any-pointer: coarse) {
+    .margin {
+        margin: 2rem !important;
+    }
+
+    .title {
+        font-size: 75px;
+        font-weight: 660;
+    }
+
+    div#shell {
+        font-size: 50px;
+    }
+
+    p#plax1 {
+        position: absolute;
+        top: -10%;
+        left: 75%;
+        z-index: 3;
+    }
+    
+    p#plax2 {
+        position: absolute;
+        z-index: 4;
+        top: 30%;
+        left: 100%;
+    }
+    
+    p#plax3 {
+        position: absolute;
+        z-index: 2;
+        top: -20%;
+        left: 125%;
+    }
+    
+    p#plax4 {
+        position: absolute;
+        top: 20%;
+        left: 150%;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 800px) {
+    .margin {
+        margin: 2rem !important;
+    }
+
+    .title {
+        font-size: 75px;
+        font-weight: 660;
+    }
+
+    div#shell {
+        font-size: 50px;
+    }
+
+    p#plax1 {
+        position: absolute;
+        top: -10%;
+        left: 75%;
+        z-index: 3;
+    }
+    
+    p#plax2 {
+        position: absolute;
+        z-index: 4;
+        top: 30%;
+        left: 100%;
+    }
+    
+    p#plax3 {
+        position: absolute;
+        z-index: 2;
+        top: -20%;
+        left: 125%;
+    }
+    
+    p#plax4 {
+        position: absolute;
+        top: 20%;
+        left: 150%;
+        z-index: 1;
+    }
 }
