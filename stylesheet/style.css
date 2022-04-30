@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+body {
+    color: #121212 !important;
+}
+
+header {
+    width: 270px;
+    float: left;
+    position: fixed;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+section {
+    width:500px;
+    float:right;
+    padding-bottom:50px;
+}
+
+footer {
+    width:270px;
+    float:left;
+    position:fixed;
+    bottom:50px;
+    -webkit-font-smoothing:subpixel-antialiased;
+}
+
+h1 {
+    top: 50% !important;
+    left: 50%;
+}
+
+p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: auto;
+}
+
+a {
+    color: #ffc107 !important;
+    text-decoration: none !important;
+}
+
+.title {
+    font-weight: 750;
+    font-size: 75px;
+    /* background: linear-gradient(to right, #ffc107, #ffc107, #212529); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+}
+
+.accent {
+    color: #ffc107 !important;
+    font-weight: bolder;
+}
+
+::selection {
+    background-color: #121212;
+    color: #ffc107;
+}
+
+.accent::selection {
+    background-color: #ffc107;
+    color: #121212;
+}
+
+/* plaxify */
+div#shell {
+    display: block;
+    position: relative;
+    margin: 100px auto;
+    width: 318px;
+    height: 318px;
+}
+
+div#shell{
+    z-index: 1;
+}
+
+p#plax1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    z-index: 3;
+}
+
+p#plax2 {
+    position: absolute;
+    z-index: 4;
+    top: 40%;
+    left: 75%;
+}
+
+p#plax3 {
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    left: 100%;
+}
+
+p#plax4 {
+    position: absolute;
+    top: 40%;
+    left: 125%;
+    z-index: 1;
+}

@@ -1,7 +1,2 @@
 User-agent: *
 Allow: /
-Disallow: /posts/
-Disallow: /about/
-Disallow: /tag/
-Disallow: googlea4a707c4fe15f6ab.html
-Disallow: naver246d0f70230e3abcd1612c858a8448dd.html.html/
