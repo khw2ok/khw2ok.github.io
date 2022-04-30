@@ -68,7 +68,3 @@ function headerbarToggle() {
         ftrbar.style.opacity = 1
     }
 }
-
-function goUp() {
-    windows.scrollTo(0,0)
-}
