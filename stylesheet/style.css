@@ -49,6 +49,15 @@ a {
     /* -webkit-text-fill-color: transparent; */
 }
 
+.circle {
+    background-color: #ffc107;
+    width: 70px;
+    height: 70px;
+    border-radius: 75px;
+    text-align: center !important;
+    margin: 0, auto;
+}
+
 .accent {
     color: #ffc107 !important;
     font-weight: bolder;
@@ -62,10 +71,6 @@ a {
 .accent::selection {
     background-color: #ffc107;
     color: #121212;
-}
-
-.mobile {
-    display: none;
 }
 
 /* plaxify */
