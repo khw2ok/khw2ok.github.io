@@ -1,20 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+.target {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.target::-webkit-scrollbar {
+    display: none;
+}
 
 body {
     color: #121212 !important;
-}
-
-header {
-    width: 270px;
-    float: left;
-    position: fixed;
-    -webkit-font-smoothing: subpixel-antialiased;
-}
-
-section {
-    width:500px;
-    float:right;
-    padding-bottom:50px;
 }
 
 footer {
