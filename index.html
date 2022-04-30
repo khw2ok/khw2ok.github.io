@@ -18,10 +18,10 @@
 
     <script type="text/javascript">
       $(document).ready(function () {
-        $('#plax1').plaxify({"xRange":20,"yRange":40})
-        $('#plax2').plaxify({"xRange":20,"yRange":40,"invert":true})
-        $('#plax3').plaxify({"xRange":20,"yRange":40})
-        $('#plax4').plaxify({"xRange":20,"yRange":40,"invert":true})
+        $('#plax1').plaxify({"xRange":100,"yRange":100})
+        $('#plax2').plaxify({"xRange":100,"yRange":100,"invert":true})
+        $('#plax3').plaxify({"xRange":100,"yRange":100})
+        $('#plax4').plaxify({"xRange":100,"yRange":100,"invert":true})
         $.plax.enable()
       })
 
@@ -38,19 +38,18 @@
     </script>
   </head>
   <body>
-    <div class="wrap">
-      <div style="position: fixed; top: 45%;">
+    <div class="padding" style="position: fixed;">
+      <div style="position: fixed; top: 36%;">
         <h1 class="title"><b>BongwonBot</b></h1>
         <p>카카오톡 봉원중학교 챗봇.</p>
 
         <button class="btn btn-outline-warning" onclick="location.href='https://pf.kakao.com/_TBYmb'">ChatBot</button>
         <button class="btn btn-outline-dark" onclick="location.href='https://github.com/bongwonbot/bongwonbot'">Github</button>
 
-        <br><br><br>
-
-        <input class="form-check-input" id="eventBox" type="checkbox" onclick="showText()" onabort="hideText()">
-        <label class="form-check-label" id="eventText" style="display: none;">&nbsp;안녕하세요 봉원중학교 챗봇입니다.</label>
       </div>
+
+      <!-- <input class="form-check-input" id="eventBox" type="checkbox" onclick="showText()" onabort="hideText()" style="width: 100px; height: 100px;"> -->
+      <!-- <label class="form-check-label" id="eventText" style="display: none;">&nbsp;안녕하세요 봉원중학교 챗봇입니다.</label> -->
 
       <div id="shell">
         <p class="accent" id="plax1">봉</p>
@@ -59,6 +58,12 @@
         <p class="accent" id="plax4">봇</p>
       </div>
 
+      <div class="mobile">
+        <p class="accent" id="unplax1">봉</p>
+        <p class="accent" id="unplax2">원</p>
+        <p class="accent" id="unplax3">챗</p>
+        <p class="accent" id="unplax4">봇</p>
+      </div>
       <footer>
         <p>봉원중학교 챗봇 개발자 <a class="accent">@khw2ok</a>
         <br>

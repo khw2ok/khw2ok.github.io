@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap");
 
 body {
     color: #121212 !important;
@@ -40,7 +40,7 @@ a {
     text-decoration: none !important;
 }
 
-.wrap {
+.padding {
     padding: 5rem !important;
 }
 
@@ -67,14 +67,18 @@ a {
     color: #121212;
 }
 
+.mobile {
+    display: none;
+}
+
 /* plaxify */
 div#shell {
     display: block;
-    position: relative;
+    position: absolute;
     margin: 100px auto;
     width: 300px;
     height: 300px;
-    font-size: 75px;
+    font-size: 125px;
 }
 
 div#shell{
@@ -82,117 +86,87 @@ div#shell{
 }
 
 p#plax1 {
-    position: absolute;
-    top: -10%;
-    left: 100%;
-    z-index: 3;
+    position: inherit;
+    top: 25vh;
+    left: 50vw;
+    z-index: 1;
 }
 
 p#plax2 {
-    position: absolute;
-    z-index: 4;
-    top: 30%;
-    left: 125%;
+    position: inherit;
+    top: 25vh;
+    left: 75vw;
+    z-index: 2;
 }
 
 p#plax3 {
-    position: absolute;
-    z-index: 2;
-    top: -20%;
-    left: 150%;
+    position: inherit;
+    top: 50vh;
+    left: 50vw;
+    z-index: 3;
 }
 
 p#plax4 {
-    position: absolute;
-    top: 20%;
-    left: 175%;
-    z-index: 1;
+    position: inherit;
+    top: 50vh;
+    left: 75vw;
+    z-index: 4;
 }
 
 /* media */
 
 @media (any-pointer: coarse) {
-    .margin {
-        padding: 2.5rem !important;
+    footer {
+        font-size: auto;
+        white-space: nowrap;
+    }
+
+    .padding {
+        padding: 2rem !important;
     }
 
     .title {
-        font-size: 75px;
-        font-weight: 660;
-    }
-
-    div#shell {
         font-size: 50px;
+        font-weight: 600;
+        top: 100% !important;
     }
 
-    p#plax1 {
+    .mobile {
+        display: block;
         position: absolute;
-        top: -10%;
-        left: 75%;
+        font-size: 50px;
+        z-index: 1;
+    }
+
+    p#unplax1 {
+        position: inherit;
+        top: 65vh;
+        left: 55vw;
+        z-index: 1;
+    }
+    
+    p#unplax2 {
+        position: inherit;
+        top: 55vh;
+        left: 90vw;
+        z-index: 2;
+    }
+    
+    p#unplax3 {
+        position: inherit;
+        top: 85vh;
+        left: 50vw;
         z-index: 3;
     }
     
-    p#plax2 {
-        position: absolute;
+    p#unplax4 {
+        position: inherit;
+        top: 75vh;
+        left: 85vw;
         z-index: 4;
-        top: 30%;
-        left: 100%;
-    }
-    
-    p#plax3 {
-        position: absolute;
-        z-index: 2;
-        top: -20%;
-        left: 125%;
-    }
-    
-    p#plax4 {
-        position: absolute;
-        top: 20%;
-        left: 150%;
-        z-index: 1;
-    }
-}
-
-@media (max-width: 800px) {
-    .margin {
-        margin: 2rem !important;
-    }
-
-    .title {
-        font-size: 75px;
-        font-weight: 660;
     }
 
     div#shell {
-        font-size: 50px;
-    }
-
-    p#plax1 {
-        position: absolute;
-        top: -10%;
-        left: 75%;
-        z-index: 3;
-    }
-    
-    p#plax2 {
-        position: absolute;
-        z-index: 4;
-        top: 30%;
-        left: 100%;
-    }
-    
-    p#plax3 {
-        position: absolute;
-        z-index: 2;
-        top: -20%;
-        left: 125%;
-    }
-    
-    p#plax4 {
-        position: absolute;
-        top: 20%;
-        left: 150%;
-        z-index: 1;
+        display: none;
     }
 }
