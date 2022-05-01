@@ -20,10 +20,10 @@
 
     <script type="text/javascript">
       $(document).ready(function () {
-        $('#plax1').plaxify({"xRange":100,"yRange":100})
-        $('#plax2').plaxify({"xRange":100,"yRange":100,"invert":true})
-        $('#plax3').plaxify({"xRange":100,"yRange":100})
-        $('#plax4').plaxify({"xRange":100,"yRange":100,"invert":true})
+        $('#plax1').plaxify({"xRange":150,"yRange":150})
+        $('#plax2').plaxify({"xRange":150,"yRange":150,"invert":true})
+        $('#plax3').plaxify({"xRange":150,"yRange":150})
+        $('#plax4').plaxify({"xRange":150,"yRange":150,"invert":true})
         $.plax.enable()
       })
 
@@ -41,6 +41,14 @@
       document.oncontextmenu = function() {
         return false
       }
+
+      document.ondragstart = function() {
+        return false
+      }
+
+      document.onselectstart = function() {
+        return false
+      }
     </script>
   </head>
   <body class="target">
@@ -50,7 +58,7 @@
         <p>봉원중학교 카카오톡 챗봇.</p>
 
         <div id="btnbar">
-          <button class="btn btn-outline-secondary" onclick="location.href='javascript:window.scrollTo(1000000,1000000)'">comments</button>
+          <button class="btn btn-outline-secondary" onclick="location.href='javascript:window.scrollTo(1000000,1000000)'">Comments</button>
           <button class="btn btn-outline-warning" onclick="location.href='https://pf.kakao.com/_TBYmb'">ChatBot</button>
           <button class="btn btn-outline-dark" onclick="location.href='https://github.com/khw2ok/bongwonbot'">Github</button>
         </div>
@@ -71,14 +79,6 @@
         <br>
         <small>April 20, 2022</small></p>
       </footer>
-
-      <div style="position: fixed; top: 90vh; left: 90vh;">
-        <a href="javascript:window.scrollTo(0,0)" style="padding: 25%; font-size: 50px;">
-          <span class="material-icons">
-            arrow_upward
-          </span>
-        </a>
-      </div>
     </div>
 
     <br><br><br><br><br>

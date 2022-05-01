@@ -71,11 +71,8 @@ a {
 
 /* plaxify */
 div#shell {
-    display: block;
+    display: contents;
     position: absolute;
-    margin: 100px auto;
-    width: 300px;
-    height: 300px;
     font-size: 125px;
 }
 
@@ -86,7 +83,7 @@ div#shell{
 p#plax1 {
     position: inherit;
     top: 25vh;
-    left: 50vw;
+    left: 50vmax;
     z-index: 1;
 }
 
@@ -132,5 +129,9 @@ p#plax4 {
     .comments {
         height: auto;
         width: max-content;
+    }
+
+    div#shell {
+        display: none;
     }
 }
