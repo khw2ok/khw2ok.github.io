@@ -1,150 +1,43 @@
+<!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="naver-site-verification" content="0768396dacbcaea687304bbb692bb4efaed00396">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BongwonBot</title>
+        <title>봉원중학교 챗봇</title>
+        <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
 
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="stylesheet/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="javascript/themesTrigger.js"></script>
-  </head>
-  <body>
-  <!-- <label for="themes-trigger"></label> -->
+        <link rel="stylesheet" href="stylesheet/style.css">
+        <script src="javascript/themeToggle.js"></script>
+    </head>
+    <body class="u-background">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center vh-100">
+                <div class="text-center">
+                    <h1 class="display-1 text-danger">
+                        <i class="bi bi-cone-striped" onclick="themesToggle()"></i>
+                    </h1>
 
-    <header>
-      <div class="container">
-        <div class="logo img">
-          <a href="/">
-            <img src="img/favicon.ico" alt="" style="height: auto; width: 50px;">
-          </a>
+                    <p class="fs-3 u-primary">
+                        <span class="text-danger"><b>이런!</b></span>
+                        페이지를 찾을 수 없습니다.
+                        <br>
+                        <small class="fs-6">개발 중인 페이지 입니다.</small>
+                    </p>
+
+                    <a class="btn btn-lg btn-danger" href="http://pf.kakao.com/_TBYmb"><b>챗봇 보러가기</b></a>
+                </div>
+            </div>
+
+            <!-- <footer class="py-5">
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>© 2022 Company, Inc. All rights reserved.</p>
+                </div>
+            </footer> -->
         </div>
-      </div>
-    </header>
-
-    <nav>
-      <div class="themes_trigger" title="테마 변경" onclick="themesTrigger()" style="cursor: pointer;">
-        <span class="material-icons" id="dark_mode" style="opacity: 1;">dark_mode</span>
-        <span class="material-icons" id="light_mode" style="opacity: 0;">light_mode</span>
-      </div>
-
-      <div class="comments" title="댓글">
-        <span class="material-icons" onclick="location.href='#comments'" style="cursor: pointer;">comment</span>
-      </div>
-
-      <div class="upward" title="맨 위로">
-        <span class="material-icons" onclick="location.href='#'" style="cursor: pointer;">north</span>
-      </div>
-    </nav>
-
-    <main id="">
-      <section>
-        <div class="head" id="head">
-          <h1 title="@bongwonbot">봉원중학교 챗봇</h1>
-          <p>봉원중학교 카카오톡 챗봇 by <a href="https://github.com/khw2ok">@khw2ok</a>.<p>
-          <footer>
-            <table class="head" style="text-align: left; width: 20vw;">
-              <tbody>
-                <p>
-                  <tr>
-                    <th id="dev" title="개발자">developer</th>
-                    <td style="text-align: right;"><a href="https://github.com/khw2ok">@khw2ok</a> <small>(봉원중학교 챗봇)</small></td>
-                  </tr>
-                  <tr>
-                    <th id="mail" title="메일">email</th>
-                    <td style="text-align: right;"><a href="mailto:official@bongwon.kro.kr">official@bongwon.kro.kr</a></td>
-                  </tr>
-                  <tr>
-                    <th id="site" title="사이트">website</th>
-                    <td style="text-align: right;"><a href="/">bongwon.kro.kr</a></td>
-                  </tr>
-                </p>
-              </tbody>
-            </table>
-          </footer>
-        </div>
-
-        <br>
-        <hr>
-        <br>
-
-        <div class="contents">
-          <div id="a1" title="#a1">
-            <blockquote>
-              <h3>페이지 문제점 문의 ⚠️</h3>
-              <p>페이지에서 발견된 문제점은 메일을 통해 문의해주시길 바라겠습니다. 감사합니다.</p>
-            </blockquote>
-          </div>
-
-          <br><br>
-
-          <div id="c1" title="#c1">
-            <h2><i>prev3.1</i> 업데이트</h2>
-            <p>
-              <small>May 11 2022</small>
-              <br><br>
-              업데이트 내용은 아래와 같습니다.
-              <br><br>
-              <table>
-                <h4>Major Updates</h4>
-                <ul>
-                  <li>학사<small>(학교 행사)</small> 일정 확인 명령어 추가</li>
-                  <li>명언 명령어 추가</li>
-                  <li>학교 정보 명령어 삭제</li>
-                  <li><a href="/">bongwon.kro.kr</a> 서비스 시작</li>
-                </ul>
-                <h4>Minor Updates</h4>
-                <ul>
-                  <li>알 수 없는 시간표 request 오류 return 제작</li>
-                  <li>챗봇 서버 api url 변경</li>
-                  <li>깃허브 파일 구성 변경</li>
-                </ul>
-                <h4>HotFixes</h4>
-                <ul>
-                  <li>도움말 메뉴에서 시간표 버튼이 표시되지 않는 문제 해결</li>
-                  <li>급식 명령어에서 사진이 제대로 나오지 않는 문제 해결</li>
-                </ul>
-              </table>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <div class="br" id="comments">
-        <br><br><br><br><br>
-        <br><br><br><br><br>
-      </div>
-
-      <div class="comments">
-        <div id="comments_light" style="display: block;">
-          <script src="https://utteranc.es/client.js"
-            id="comments-light"
-            repo="khw2ok/khw2ok.github.io"
-            issue-term="pathname"
-            label="Comments"
-            theme="github-light"
-            crossorigin="anonymous"
-            async>
-          </script>
-        </div>
-
-        <div id="comments_dark" style="display: none;">
-          <script src="https://utteranc.es/client.js"
-            id="comments-dark"
-            repo="khw2ok/khw2ok.github.io"
-            issue-term="pathname"
-            label="Comments"
-            theme="github-dark"
-            crossorigin="anonymous"
-            async>
-          </script>
-        </div>
-      </div>
-      
-    </main>
-  </body>
+    </body>
 </html>
